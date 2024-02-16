@@ -17,3 +17,13 @@ document.getElementById('formularioBusqueda').addEventListener('submit', functio
             nuevoRecordatorio.textContent = evento + ' - ' + fecha;
             listaRecordatorios.appendChild(nuevoRecordatorio);
         }
+
+                // comentarios
+
+function agregarComentario(destino) {
+    var nuevoComentario = document.getElementById('nuevoComentario' + destino).value;
+    var listaComentarios = document.getElementById('comentarios' + destino);
+    var nuevoItemComentario = document.createElement('li');
+    nuevoItemComentario.textContent = nuevoComentario;
+    listaComentarios.appendChild(nuevoItemComentario);
+        }
