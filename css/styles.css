@@ -1,84 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-#formularioBusqueda {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
+/* Estilos para la sección de Recordatorios de Viaje */
 h2 {
     text-align: center;
     color: #333;
     margin-top: 30px;
-}
-
-section {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #333;
-}
-
-p {
-    color: #555;
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-h4 {
-    color: #333;
 }
 
 ul {
@@ -87,13 +11,11 @@ ul {
     margin: 10px 0;
 }
 
-textarea {
-    width: 100%;
-    padding: 10px;
+li {
     margin-bottom: 10px;
-    box-sizing: border-box;
 }
 
+/* Estilos para la sección de Reservas Simples */
 h2 {
     text-align: center;
     color: #333;
@@ -123,6 +45,7 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Estilos para la sección de Comentarios de Usuarios */
 h4 {
     color: #333;
 }
