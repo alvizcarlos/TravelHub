@@ -1,42 +1,41 @@
-function reservarVuelo(destino) {
-    
-}
+document.addEventListener('DOMContentLoaded', function () {
+    // Datos de destinos directamente en el código
+    const destinosData = [
+        { nombre: "París", atracciones: ["Torre Eiffel", "Louvre"], alojamiento: ["Hotel A", "Hotel B"] },
+        { nombre: "Nueva York", atracciones: ["Estátua de la Libertad", "Central Park"], alojamiento: ["Hotel X", "Hotel Y"] }
+        // Agrega más destinos según sea necesario
+    ];
 
-function agregarComentario(destino) {
-    var listaComentarios = document.getElementById('listaComentarios' + destino);
-    var nuevoComentario = document.createElement('li');
-    var nuevoComentarioTexto = document.getElementById('nuevoComentario' + destino).value;
-    nuevoComentario.textContent = nuevoComentarioTexto;
-    listaComentarios.appendChild(nuevoComentario);
-}
-
-// Ejemplo de vuelos recientes o cercanos
-const vuelosRecientes = [
-    { origen: "Bogotá", destino: "Medellín", fecha: "2024-02-20" },
-    { origen: "Medellín", destino: "Cali", fecha: "2024-02-22" },
-    { origen: "Bogotá", destino: "Cartagena", fecha: "2024-02-25" }
-];
-
-document.getElementById('formularioBusqueda').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    // Obtener valores del formulario
-    const origen = document.getElementById('origen').value;
-    const destino = document.getElementById('destino').value;
-    const fecha = document.getElementById('fecha').value;
-
-    // búsqueda
-    if (origen && destino) {
-        // Filtrar vuelos recientes o cercanos basados en la fecha 
-        const vuelosFiltrados = vuelosRecientes.filter(vuelo => vuelo.origen === origen && vuelo.destino === destino);
-        
-        // Muestra los vuelos encontrados 
-        if (vuelosFiltrados.length > 0) {
-            alert('Vuelos encontrados: ' + JSON.stringify(vuelosFiltrados));
-        } else {
-            alert('No se encontraron vuelos para la ruta seleccionada.');
-        }
-    } else {
-        alert('Por favor, selecciona origen y destino.');
-    }
+    cargarDestinos();
 });
+
+function buscarVuelos() {
+    // Lógica de búsqueda de vuelos
+    alert("Buscando vuelos...");
+    cargarDestinos();
+}
+
+function cargarDestinos() {
+    const destinosInfo = document.getElementById("destinos-info");
+    destinosInfo.innerHTML = "";
+
+    destinosData.forEach(destino => {
+        const destinoCard = document.createElement("div");
+        destinoCard.classList.add("destino-card");
+        destinoCard.innerHTML = `<h3>${destino.nombre}</h3>
+                                <p><strong>Atracciones:</strong> ${destino.atracciones.join(", ")}</p>
+                                <p><strong>Alojamiento:</strong> ${destino.alojamiento.join(", ")}</p>`;
+        destinosInfo.appendChild(destinoCard);
+    });
+}
+
+function reservarVuelo() {
+    // Lógica para reservar vuelo
+    alert("Vuelo reservado. ¡Gracias!");
+}
+
+function enviarComentario() {
+    const comentario = document.getElementById("comentario").value;
+    // Lógica para enviar comentarios (puedes implementar el almacenamiento en una base de datos)
+    alert(`Comentario enviado: ${comentario}`);
+}

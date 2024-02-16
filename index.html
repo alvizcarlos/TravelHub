@@ -3,92 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelHub</title>
     <link rel="stylesheet" href="css/styles.css">
+    <title>Aplicación de Viajes</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#busqueda">Búsqueda de Vuelos</a></li>
+                <li><a href="#destinos">Información de Destinos</a></li>
+                <li><a href="#reservas">Reservas Simples</a></li>
+                <li><a href="#recordatorios">Recordatorios de Viaje</a></li>
+                <li><a href="#comentarios">Comentarios de Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>TravelHub</h1>
+    <main>
+        <section id="busqueda">
+            <h1>Búsqueda de Vuelos</h1>
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen">
 
-    <h2>Búsqueda de Vuelos</h2>
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino">
 
-    <form id="formularioBusqueda">
-        <label for="origen">Origen:</label>
-        <select id="origen" required>
-            <option value="" disabled selected>Selecciona una ciudad</option>
-            <option value="Bogotá">Bogotá</option>
-            <option value="Medellín">Medellín</option>
-            <option value="Cali">Cali</option>
-            <option value="Cartagena">Cartagena</option>
-            <option value="Barranquilla">Barranquilla</option>
-            <option value="Cúcuta">Cúcuta</option>
-            <option value="Bucaramanga">Bucaramanga</option>
-            <option value="Pereira">Pereira</option>
-            <option value="Santa Marta">Santa Marta</option>
-            <option value="Ibagué">Ibagué</option>
-        </select>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
 
-        <label for="destino">Destino:</label>
-        <select id="destino" required>
-            <option value="" disabled selected>Selecciona una ciudad</option>
-            <option value="Bogotá">Bogotá</option>
-            <option value="Medellín">Medellín</option>
-            <option value="Cali">Cali</option>
-            <option value="Cartagena">Cartagena</option>
-            <option value="Barranquilla">Barranquilla</option>
-            <option value="Cúcuta">Cúcuta</option>
-            <option value="Bucaramanga">Bucaramanga</option>
-            <option value="Pereira">Pereira</option>
-            <option value="Santa Marta">Santa Marta</option>
-            <option value="Ibagué">Ibagué</option>
-        </select>
+            <button onclick="buscarVuelos()">Buscar Vuelos</button>
+        </section>
 
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha">
+        <section id="destinos">
+            <h1>Información de Destinos</h1>
+            <div id="destinos-info"></div>
+        </section>
 
-        <input type="submit" value="Buscar Vuelos">
-    </form>
+        <section id="reservas">
+            <h1>Reservas Simples</h1>
+            <p>Selecciona tu vuelo:</p>
+            <select id="seleccionVuelo"></select>
+            <button onclick="reservarVuelo()">Reservar Vuelo</button>
+        </section>
 
-    <h2>Reservas</h2>
-    <ul id="listaReservas">
-        
-    </ul>
+        <section id="recordatorios">
+            <h1>Recordatorios de Viaje</h1>
+            <p id="recordatorio-texto"></p>
+        </section>
 
-    <h2>Recordatorios de Viaje</h2>
-    <ul id="recordatoriosViaje">
-        
-    </ul>
+        <section id="comentarios">
+            <h1>Comentarios de Usuarios</h1>
+            <textarea id="comentario" placeholder="Deja tu comentario..."></textarea>
+            <button onclick="enviarComentario()">Enviar Comentario</button>
+        </section>
+    </main>
 
-    <h2>Comentarios de Usuarios</h2>
-
-    <section id="comentariosDestino1">
-        <h3>Comentarios de Usuarios - Destino 1</h3>
-        <ul id="listaComentariosDestino1">
-            
-        </ul>
-        <textarea id="nuevoComentarioDestino1" placeholder="Deja tu comentario"></textarea>
-        <button onclick="agregarComentario('Destino 1')">Agregar Comentario</button>
-    </section>
-
-    <section id="comentariosDestino2">
-        <h3>Comentarios de Usuarios - Destino 2</h3>
-        <ul id="listaComentariosDestino2">
-            
-        </ul>
-        <textarea id="nuevoComentarioDestino2" placeholder="Deja tu comentario"></textarea>
-        <button onclick="agregarComentario('Destino 2')">Agregar Comentario</button>
-    </section>
-
-    <section id="comentariosDestino3">
-        <h3>Comentarios de Usuarios - Destino 3</h3>
-        <ul id="listaComentariosDestino3">
-            
-        </ul>
-        <textarea id="nuevoComentarioDestino3" placeholder="Deja tu comentario"></textarea>
-        <button onclick="agregarComentario('Destino 3')">Agregar Comentario</button>
-    </section>
+    <footer>
+        <p>&copy; 2024 Aplicación de Viajes</p>
+    </footer>
 
     <script src="js/script.js"></script>
-
 </body>
 </html>
