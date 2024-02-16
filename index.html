@@ -9,7 +9,7 @@
 
     <h1>Búsqueda de Vuelos</h1>
 
-    <form>
+    <form id="formularioBusqueda">
         <label for="origen">Origen:</label>
         <input type="text" id="origen" required>
 
@@ -28,19 +28,25 @@
         <h3>Destino 1</h3>
         <p>Atracciones: [Lista de atracciones]</p>
         <p>Opciones de Alojamiento: [Lista de opciones de alojamiento]</p>
+        <button onclick="reservarVuelo('Destino 1')">Reservar Vuelo</button>
     </section>
 
     <section id="destino2">
         <h3>Destino 2</h3>
         <p>Atracciones: [Lista de atracciones]</p>
         <p>Opciones de Alojamiento: [Lista de opciones de alojamiento]</p>
+        <button onclick="reservarVuelo('Destino 2')">Reservar Vuelo</button>
     </section>
 
     <section id="destino3">
         <h3>Destino 3</h3>
         <p>Atracciones: [Lista de atracciones]</p>
         <p>Opciones de Alojamiento: [Lista de opciones de alojamiento]</p>
+        <button onclick="reservarVuelo('Destino 3')">Reservar Vuelo</button>
     </section>
+
+    <h2>Reservas</h2>
+    <ul id="listaReservas"></ul>
 
 </body>
 </html>
