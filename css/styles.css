@@ -1,9 +1,11 @@
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f2f2f2;
     color: #333;
     margin: 0;
     padding: 0;
+    margin-bottom: 50px; /* Añadir margen inferior para dejar espacio al footer */
 }
 
 header {
@@ -35,4 +37,200 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Estilos para la sección de Recordatorios de Viaje */
+.seccion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+}
+
+.seccion h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resultados {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resultados li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Estilos específicos para la sección de Búsqueda de Vuelos */
+#busqueda label,
+#busqueda select,
+#busqueda input,
+#busqueda button {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#busqueda select,
+#busqueda input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#busqueda select:focus,
+#busqueda input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#busqueda button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#busqueda button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la sección de Información de Destinos */
+.destino-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destino-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.destino-card p {
+    color: #555;
+}
+
+/* Estilos para la sección de Reservas Simples */
+#reservas select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#reservas select:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#reservas button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservas button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la sección de Comentarios de Usuarios */
+#comentarios label,
+#comentarios input,
+#comentarios textarea,
+#comentarios button {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#comentarios input,
+#comentarios textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#comentarios input:focus,
+#comentarios textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#comentarios button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#comentarios button:hover {
+    background-color: #45a049;
+}
+
+#listaComentarios li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#listaComentarios p {
+    color: #555;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #4285f4;
+    padding: 10px 0; /* Ajustar el espacio en la parte superior e inferior del encabezado */
+    text-align: center; /* Centrar el contenido */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar los elementos de la lista horizontalmente */
+}
+
+nav ul li {
+    margin: 0 20px; /* Añadir espacio entre los elementos de la lista */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Agregar una transición suave al color del texto */
+}
+
+nav a:hover {
+    color: #f9f9f9; /* Cambiar el color del texto al pasar el ratón sobre él */
 }
