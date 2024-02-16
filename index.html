@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelHub</title>
-    
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <h1>Búsqueda de Vuelos</h1>
+    <h1>TravelHub</h1>
+
+    <h2>Búsqueda de Vuelos</h2>
 
     <form id="formularioBusqueda">
         <label for="origen">Origen:</label>
@@ -47,13 +49,45 @@
     </section>
 
     <h2>Reservas</h2>
-    <ul id="listaReservas"></ul>
+    <ul id="listaReservas">
+        
+    </ul>
 
     <h2>Recordatorios de Viaje</h2>
-    <ul id="recordatoriosViaje"></ul>
+    <ul id="recordatoriosViaje">
+        
+    </ul>
 
-    <script src="file:///D:/Desktop/TravelHub/js/script.js"></script>
-    
+    <h2>Comentarios de Usuarios</h2>
+
+    <section id="comentariosDestino1">
+        <h3>Comentarios de Usuarios - Destino 1</h3>
+        <ul id="listaComentariosDestino1">
+            
+        </ul>
+        <textarea id="nuevoComentarioDestino1" placeholder="Deja tu comentario"></textarea>
+        <button onclick="agregarComentario('Destino 1')">Agregar Comentario</button>
+    </section>
+
+    <section id="comentariosDestino2">
+        <h3>Comentarios de Usuarios - Destino 2</h3>
+        <ul id="listaComentariosDestino2">
+            
+        </ul>
+        <textarea id="nuevoComentarioDestino2" placeholder="Deja tu comentario"></textarea>
+        <button onclick="agregarComentario('Destino 2')">Agregar Comentario</button>
+    </section>
+
+    <section id="comentariosDestino3">
+        <h3>Comentarios de Usuarios - Destino 3</h3>
+        <ul id="listaComentariosDestino3">
+            
+        </ul>
+        <textarea id="nuevoComentarioDestino3" placeholder="Deja tu comentario"></textarea>
+        <button onclick="agregarComentario('Destino 3')">Agregar Comentario</button>
+    </section>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
