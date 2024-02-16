@@ -8,3 +8,12 @@ function reservarVuelo(destino) {
 document.getElementById('formularioBusqueda').addEventListener('submit', function(event) {
     event.preventDefault();
 });
+
+
+        // recordatorios de viaje
+        function agregarRecordatorioViaje(evento, fecha) {
+            var listaRecordatorios = document.getElementById('recordatoriosViaje');
+            var nuevoRecordatorio = document.createElement('li');
+            nuevoRecordatorio.textContent = evento + ' - ' + fecha;
+            listaRecordatorios.appendChild(nuevoRecordatorio);
+        }
