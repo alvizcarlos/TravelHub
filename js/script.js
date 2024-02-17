@@ -155,6 +155,6 @@ function enviarComentario() {
     document.getElementById("nombre").value = "";
     document.getElementById("comentario").value = "";
 
-    // Puedes agregar lógica adicional, como enviar el comentario a un servidor real, si es necesario.
-    // En este ejemplo, solo se muestra en el cliente.
+ 
 }
+
