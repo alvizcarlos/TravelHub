@@ -232,6 +232,20 @@ footer {
 
 
 /* Estilos para la sección de Reservas */
+#reservas {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#reservas h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de Reservas */
 #reservas select {
     width: 100%;
     padding: 15px;
@@ -259,20 +273,22 @@ footer {
 }
 
 #reservas button:hover {
-    background-color: #2ecc71;
+    background-color: #27ae60;
 }
 
-#reservas {
-    background-color: #3498db;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+#reservas p {
+    font-size: 20px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 15px; /* Espacio superior */
 }
-#reservas h1 {
-    color: #fff;
-    margin-bottom: 20px;
+
+#infoReserva {
+    font-size: 24px; /* Tamaño de fuente aún más grande para resaltar el precio */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 15px; /* Espacio superior */
+    color: #fefefe; /* Color verde para destacar */
 }
+
 
 /* Estilos para la sección de Comentarios de Usuarios */
 #comentarios label,
